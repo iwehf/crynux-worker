@@ -56,7 +56,7 @@ class Config(BaseSettings):
     preloaded_models: PreloadedModelsConfig | None = None
     proxy: ProxyConfig | None = None
 
-    worker_url: str = "https://dy.relay.crynux.ai/v1/worker"
+    worker_url: str
     output_dir: str = "results"
 
     pid_file: str = "crynux_worker.pid"
